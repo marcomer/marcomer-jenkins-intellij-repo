@@ -15,7 +15,6 @@ public class CalculatorTest {
         assertEquals(6 , myCalculator.add(0,6));
         assertEquals(6 , myCalculator.add(7,-1));
         assertEquals( -6, myCalculator.add(-3,-3));
-
     }
 
 
@@ -27,7 +26,6 @@ public class CalculatorTest {
         assertEquals(2 , myCalculator.subtract(4,2));
         assertEquals(-4 , myCalculator.subtract(0,4));
         assertEquals(99999 , myCalculator.subtract(100000,1));
-
     }
 
     @Test
@@ -39,7 +37,6 @@ public class CalculatorTest {
         assertEquals(-4 , myCalculator.multiply(-1,4));
         assertEquals(0 , myCalculator.multiply(0,4));
         assertEquals(400 , myCalculator.multiply(100,4));
-
     }
 
 
@@ -52,7 +49,6 @@ public class CalculatorTest {
         assertEquals(50 , myCalculator.divide(100,2));
         assertEquals(25 , myCalculator.divide(50,2));
         assertEquals(1 , myCalculator.divide(3,2));
-
     }
 
     @Test
@@ -68,8 +64,6 @@ public class CalculatorTest {
         catch (ArithmeticException e){
             assertTrue(failureMessage.contains(e.getMessage()));
         }
-
-
     }
 
     @Test
@@ -86,7 +80,6 @@ public class CalculatorTest {
         assertEquals(13 , myCalculator.fibonacciNumberFinder(7));
         assertEquals(21 , myCalculator.fibonacciNumberFinder(8));
         assertEquals(317811 , myCalculator.fibonacciNumberFinder(28));
-
     }
 
     @Test
@@ -99,7 +92,6 @@ public class CalculatorTest {
         assertEquals("10100" , myCalculator.intToBinaryNumber(20));
         assertEquals("1111100111" , myCalculator.intToBinaryNumber(999));
         assertEquals("1111111111" , myCalculator.intToBinaryNumber(1023));
-
     }
 
     @Test
@@ -116,8 +108,5 @@ public class CalculatorTest {
         for(String targetString:uniqueIDBank){
             assertTrue(targetString.contains("CS204"));
         }
-
     }
-
-
 }

@@ -16,7 +16,6 @@ public class CalculatorTestThorough {
             int secondNumber = i;
             assertEquals(2000000000, myCalculator.add(firstNumber,secondNumber));
         }
-
     }
 
 
@@ -38,7 +37,6 @@ public class CalculatorTestThorough {
        for(int i = 0; i < 2000000000 ; i++){
            assertEquals(0 , myCalculator.multiply(0 , i));
        }
-
     }
 
 
@@ -49,7 +47,6 @@ public class CalculatorTestThorough {
         for(int i = 1; i < 2000000000 ; i++){
             assertEquals(0 , myCalculator.divide(0 , i));
         }
-
     }
 
     @Test
@@ -77,8 +74,6 @@ public class CalculatorTestThorough {
 
             assertEquals(317811 , myCalculator.fibonacciNumberFinder(28));
         }
-
-
     }
 
     @Test
@@ -93,7 +88,6 @@ public class CalculatorTestThorough {
             assertEquals("1111100111" , myCalculator.intToBinaryNumber(999));
             assertEquals("1111111111" , myCalculator.intToBinaryNumber(1023));
         }
-
     }
 
     @Test
@@ -110,9 +104,5 @@ public class CalculatorTestThorough {
         for(String targetString:uniqueIDBank){
             assertTrue(targetString.contains("CS204"));
         }
-
     }
-
-
-
 }
